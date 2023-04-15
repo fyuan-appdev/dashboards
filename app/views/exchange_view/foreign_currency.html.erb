@@ -6,7 +6,7 @@
 <ul>
   <% @array_of_symbols.each do |a_symbol|%>
   <li>
-    <a href="/<% @base_currency %>/<% a_symbol %>">
+    <a href="/forex/<%= @base_currency %>/<%= a_symbol %>">
       Convert 1 <%= @base_currency%> to <%= a_symbol %>...
     </a>
   </li>
