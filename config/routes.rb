@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get("/forex/:base_currency", { :controller => "exchange", :action => "exchange"})
 
+  get("/forex/:base_currency/:foreign_currency", { :controller => "exchange", :action => "rate"})
+
 #  get("/lottery/covid", { :controller => "lottery", :action => "lucky"})
 
 end
